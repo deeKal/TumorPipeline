@@ -64,7 +64,7 @@ bwaAlignment <- function(sample, reference, pathToPicard, pathToBWA) {
     command <- paste("java -Xmx8G -jar ", pathToPicard, " SamToFastq I=", 		
         MAbam, " FASTQ=/dev/stdout CLIPPING_ATTRIBUTE=XT CLIPPING_ACTION=2 \
 		INTERLEAVE=true NON_PF=true TMP_DIR=temp \
-		| /home/dnalab/Tools/BWA/bwa mem -M -t 2 -p ", 							 
+		| ", pathToBWA, " mem -M -t 2 -p ", 							 
         reference, " /dev/stdin \
 		| java -Xmx16G -jar ", pathToPicard, 									
 		" MergeBamAlignment ALIGNED_BAM=/dev/stdin UNMAPPED_BAM=", 				
