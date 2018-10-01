@@ -1,0 +1,6 @@
+program	version	download site
+BWA	0.7	https://sourceforge.net/projects/bio-bwa/files/
+GenomeAnalysisTK	3.8	https://github.com/broadgsa/gatk/releases/tag/3.8-1
+picard	2.15.0	https://github.com/broadinstitute/picard/releases/tag/2.15.0
+SamTools	1.6	https://sourceforge.net/projects/samtools/files/samtools/1.6/
+vcftools	0.1.13	https://sourceforge.net/projects/vcftools/files/
